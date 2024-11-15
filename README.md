@@ -4,7 +4,7 @@ This project implements a secure steganography technique by combining the **Leas
 
 ## 🔐 Features
 -  **Text Steganography**: Embed secret text into an image using LSB.
-- 🖼 **Image Steganography**: Hide one image within another.
+-  **Image Steganography**: Hide one image within another.
 -  **AES-256 Encryption**: Ensure secure transmission of the embedded data.
 -  **Data Retrieval**: Extract hidden data with authentication.
 -  **Image Quality Maintenance**: High PSNR values ensure minimal distortion in the stego image.
@@ -26,12 +26,12 @@ This project implements a secure steganography technique by combining the **Leas
 
 ## 🛠️ Commands
 ### 📝 Text Steganography
-- **Encryption**: `cryptosteganography save -i <cover_image> -m <secret_message> -o <stego_image>`
-- **Decryption**: `cryptosteganography retrieve -i <stego_image>`
+- **Encryption**: `python3 cryptosteganography.py save -i <cover_image> -m <secret_message> -o <stego_image>`
+- **Decryption**: `python3 cryptosteganography.py retrieve -i <stego_image>`
 
 ### 🖼️ Image Steganography
-- **Encryption**: `cryptosteganography save -i <cover_image> -f <secret_image> -o <stego_image>`
-- **Decryption**: `cryptosteganography retrieve -i <stego_image>`
+- **Encryption**: `python3 cryptosteganography.py save -i <cover_image> -f <secret_image> -o <stego_image>`
+- **Decryption**: `python3 cryptosteganography.py retrieve -i <stego_image>`
 
 ## 💳 Applications
 -  Military communication.
