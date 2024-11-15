@@ -19,10 +19,9 @@ This project implements a secure steganography technique by combining the **Leas
    - Performs AES decryption and LSB decoding to retrieve hidden data.
 
 ## 📈 Results
-- **PSNR and MSE**:
-  - Text steganography: **PSNR** = 50.11 dB, **MSE** = 0.63.
-  - Image steganography: **PSNR** = 56.78 dB, **MSE** = 0.14.
-- Minimal perceptible difference between cover and stego images.
+- **Minimal Distortion**: The stego images show negligible visual differences compared to the original cover images, ensuring invisibility of hidden data.
+- **High PSNR Values**: High Peak Signal-to-Noise Ratio (PSNR) confirms the quality of the stego image.
+- **Low MSE Values**: Low Mean Squared Error (MSE) indicates minimal changes to the cover image pixels during data embedding.
 
 ## 🛠️ Commands
 ### 📝 Text Steganography
@@ -34,8 +33,8 @@ This project implements a secure steganography technique by combining the **Leas
 - **Decryption**: `python3 cryptosteganography.py retrieve -i <stego_image> -o <output_image>`
 
 ### 📊 Quality Metrics and Histogram Analysis
-- **Calculate PSNR and MSE**: `python3 quality_metrics.py -c earth.jpeg -s output.png`
-- **Generate Histogram Analysis**: `python3 histogram_analysis.py -s leaf.jpeg -c stego.png -o histogram.png`
+- **Calculate PSNR and MSE**: `python3 quality_metrics.py -c <cover_image> -s <stego_image>`
+- **Generate Histogram Analysis**: `python3 histogram_analysis.py -c <cover_image> -s <stego_image> -o <output_histogram_image>`
 
 ## 💳 Applications
 - Military communication.
@@ -49,5 +48,6 @@ This project implements a secure steganography technique by combining the **Leas
 
 ## 📖 How to Run
 1. Clone the repository: `git clone https://github.com/damodharpai707/Steganography-using-AES-256-Algorithm.git`
-2. Follow the instructions in the code to input your cover image and data.
+2. Follow the instructions in the code to input your cover image and data or follow the project report at [Github]().
 3. Use the provided commands for encryption and decryption.
+
