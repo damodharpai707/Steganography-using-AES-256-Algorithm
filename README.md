@@ -48,6 +48,6 @@ This project implements a secure steganography technique by combining the **Leas
 
 ## 📖 How to Run
 1. Clone the repository: `git clone https://github.com/damodharpai707/Steganography-using-AES-256-Algorithm.git`
-2. Follow the instructions in the code to input your cover image and data or follow the project report at [Github]().
+2. Follow the instructions in the code to input your cover image and data or follow the project report at [Github](https://github.com/damodharpai707/Steganography-using-AES-256-Algorithm/blob/main/Project%20Report.pdf).
 3. Use the provided commands for encryption and decryption.
 
